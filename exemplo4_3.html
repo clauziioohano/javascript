@@ -1,0 +1,26 @@
+<html>
+  <head>
+   <meta charset = "utf-8">
+  </head>
+  <body>
+   <h1> Exemplo 4.3 </h1>
+    <script>
+      var altura = 1.80;
+      var peso = 60;
+      var imc = peso/(altura*altura);
+       if(imc<18.5){
+        window.document.write( imc + "classificação magreza");
+       }else if((imc>18.5) && (imc<24.9)){
+        window.document.write(imc + " classificação saúdavel");
+       }else if((imc>25.0) && (imc<29.9)){
+        window.document.write(imc + "classificação sobrepeso");
+       }else if((imc>30.0) && (imc<34.9)){
+        window.document.write(imc + "classificação obesidade grave.I" );
+       }else if((imc>35.0) && (imc<39.9)){
+        window.document.write(imc + "classificação obesidade grave.II(severo)" );
+       }else if(imc>=40.0){
+        window.document.write(imc + "classificação obesidade grave.III(morbida)" );
+       }
+     </script>
+   </body>
+</html>     
